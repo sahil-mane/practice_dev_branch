@@ -1,12 +1,9 @@
-import { Outlet, useNavigate } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import SideBar from '../components/sideBar/sideBar';
 
 
 const MainLayout = () => {
-    const navigate = useNavigate();
-    const goHome = () => {
-        navigate("/")
-    }
+    
 
     const linkData = [
         { link: "/", label: "Home" },
