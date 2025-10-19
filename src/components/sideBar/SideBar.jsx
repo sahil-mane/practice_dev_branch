@@ -10,10 +10,13 @@ const SideBar = () => {
   ]
 
   const navigate = useNavigate();
+    const goHome = () => {
+        navigate("/")
+    }
 
   return (
     <div style={{border:"1px solid red",height:"100%"}}>
-        <h1 style={{height:"8%"}}>LOGO</h1>
+        <h1 style={{height:"8%"}} onClick={()=>goHome()}>LOGO</h1>
         <div style={{border:"1px solid blue",display:"flex",flexDirection:"column",gap:"5px"}}>
           {sideBarData.map((side)=>{
             return(
