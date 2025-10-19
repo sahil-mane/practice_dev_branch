@@ -11,7 +11,7 @@ const SideBar = () => {
 
   const navigate = useNavigate();
     const goHome = () => {
-        navigate("/");
+        navigate("/")
     }
 
   return (
